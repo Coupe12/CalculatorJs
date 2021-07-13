@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Calculator </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    
+        <!-- Custom CSS file -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="col-lg-3"></div>
+
+        <div class="col-lg-6 container p-2">
+            <div class="card">
+                <div class="card-header bg-warning p-5 text-white">
+                    <div class="container bg-primary py-5">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 border-light font-12" data-previous-operand ></div>
+                            <div class="col-lg-8 col-md-8 font-20" data-current-operand ></div>
+                        </div>    
+                    </div>
+                    
+                </div>
+
+                <div class="card-body">
+                    <div class="container" id="myBtns">
+
+                        <div class="row">
+                            
+
+                            <div class="col-lg-4 col-md-4">
+                                <button class="btn btn-primary form-control my-3 py-5" data-number>1</button><br/>
+                                <button class="btn btn-warning form-control my-3 py-5" data-number>4</button><br/>
+                                <button class="btn btn-primary form-control my-3 py-5" data-number>7</button><br/>
+                                <button class="btn btn-warning form-control my-3 py-5" data-number>0</button><br/>
+                                <button class="btn btn-primary form-control my-3 py-5" data-delete>Del</button><br/>
+                            </div>
+
+                           
+
+                            <div class="col-lg-4 col-md-4">
+                                <button class="btn btn-primary form-control my-3 py-5" data-number>2</button><br/>
+                                <button class="btn btn-warning form-control my-3 py-5" data-number>5</button><br/>
+                                <button class="btn btn-primary form-control my-3 py-5" data-number>8</button><br/>
+                                <button class="btn btn-warning form-control my-3 py-5 "data-operation>/</button><br/>
+                                <button class="btn btn-warning form-control my-3 py-5" data-equals>=</button><br/>
+                            </div>
+
+                            
+
+                            <div class="col-lg-4 col-md-4">
+                                <button class="btn btn-primary form-control my-3 py-5" data-number>3</button><br/>
+                                <button class="btn btn-warning form-control my-3 py-5" data-number>6</button><br/>
+                                <button class="btn btn-primary form-control my-3 py-5" data-number>9</button><br/>
+                                <button class="btn btn-warning form-control my-3 py-5" data-operation>+</button><br/>
+                                <button class="btn btn-primary form-control my-3 py-5 "data-operation>-</button><br/>
+                            </div>
+                            
+                            <div class="container" style="font-size: 32px;">
+                                <div class="row"> 
+                                    <div class="col-lg-4 col-md-4">
+                                        <button class="btn btn-primary form-control my-3 py-5" data-all-clear>AC</button><br/>
+                                    </div>   
+                                    
+                                    <div class="col-lg-4 col-md-4">
+                                        <button class="btn btn-warning form-control my-3 py-5" data-operation>*</button><br/>
+                               
+                                    </div>  
+
+                                    <div class="col-lg-4 col-md-4">
+                                        <button class="btn btn-primary form-control my-3 py-5" data-number>.</button><br/>
+                               
+                                    </div>                              
+                                    
+                                </div>    
+                            </div>
+                        </div>    
+                        
+                        
+                     </div>
+                </div>
+
+                <div class="card-footer"></div>
+            </div>
+            
+        </div>
+
+
+        <div class="col-lg-3"></div>
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>
